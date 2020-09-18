@@ -607,7 +607,7 @@ export class Extensions {
     }
     scriptElement.setAttribute('data-script', extensionId);
     scriptElement.setAttribute('i-amphtml-inserted', '');
-    if (getMode().esm) {
+    if (IS_ESM) {
       scriptElement.setAttribute('type', 'module');
     }
 

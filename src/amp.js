@@ -150,7 +150,7 @@ if (shouldMainBootstrapRun) {
     ) {
       perf.addEnabledExperiment('no-boilerplate');
     }
-    if (getMode().esm) {
+    if (IS_ESM) {
       perf.addEnabledExperiment('esm');
     }
     fontStylesheetTimeout(self);

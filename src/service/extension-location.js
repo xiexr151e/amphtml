@@ -86,7 +86,7 @@ export function calculateEntryPointScriptUrl(
   isLocalDev,
   opt_rtv
 ) {
-  const fileExtension = getMode().esm ? '.mjs' : '.js';
+  const fileExtension = IS_ESM ? '.mjs' : '.js';
   const base = calculateScriptBaseUrl(location, isLocalDev);
   if (isLocalDev) {
     return `${base}/${entryPoint}${fileExtension}`;
