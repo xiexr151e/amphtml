@@ -59,7 +59,7 @@ export function calculateExtensionScriptUrl(
   opt_extensionVersion,
   opt_isLocalDev
 ) {
-  const fileExtension = getMode().esm ? '.mjs' : '.js';
+  const fileExtension = IS_ESM ? '.mjs' : '.js';
   const base = calculateScriptBaseUrl(location, opt_isLocalDev);
   const rtv = getMode().rtvVersion;
   if (opt_extensionVersion == null) {
